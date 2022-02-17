@@ -24,8 +24,7 @@ document
             !isNaN(incomeValue) &&
             foodValue >= 0 &&
             rentValue >= 0 &&
-            clotheValue >= 0 &&
-            balanceValue >= 0
+            clotheValue >= 0
         ) {
             const calculates = foodValue + rentValue + clotheValue;
             expensesValue.innerText = `${calculates}`;
