@@ -1,13 +1,24 @@
+/* Imported Links  */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+/* Header section */
+
 header {
     font-family: "Oswald", sans-serif;
     color: slategray;
 }
 
+
+/* Main section  */
+
 main {
     font-family: "Poppins", sans-serif;
 }
+
+
+/* Calculator section */
 
 .calc-height {
     height: 670px;
@@ -16,6 +27,9 @@ main {
 .calc-bg {
     background-color: slategray;
 }
+
+
+/* Input Section  */
 
 .input-style {
     width: 280px;

@@ -1,3 +1,5 @@
+// Calculation Section
+
 document
     .getElementById("calculator-button")
     .addEventListener("click", function(e) {
@@ -13,6 +15,8 @@ document
 
         const clothe = document.getElementById("cloths-input");
         const clotheValue = parseInt(clothe.value);
+
+        // Calculation Section Error case handling
 
         if (!isNaN(foodValue) &&
             !isNaN(rentValue) &&
@@ -32,6 +36,8 @@ document
         }
     });
 
+// Calculation Section
+
 document.getElementById("save").addEventListener("click", function(e) {
     e.preventDefault();
     const income = document.getElementById("income-input");
@@ -48,6 +54,8 @@ document.getElementById("save").addEventListener("click", function(e) {
 
     const percentageInput = document.getElementById("saveInput");
     const percentageInputValue = percentageInput.value;
+
+    //Saving Section Error case handling
 
     if (!isNaN(percentageInputValue) && percentageInputValue >= 0) {
         const calculates = foodValue + rentValue + clotheValue;
