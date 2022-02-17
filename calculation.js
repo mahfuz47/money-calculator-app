@@ -24,7 +24,8 @@ document
             !isNaN(incomeValue) &&
             foodValue >= 0 &&
             rentValue >= 0 &&
-            clotheValue >= 0
+            clotheValue >= 0 &&
+            balanceValue >= 0
         ) {
             const calculates = foodValue + rentValue + clotheValue;
             expensesValue.innerText = `${calculates}`;
@@ -32,7 +33,9 @@ document
             const balance = incomeValue - calculates;
             balanceValue.innerText = `${balance}`;
         } else {
-            alert("Please Write a Positive Nmber in all input field");
+            alert(
+                "Please Write a Positive Nmber in all input field and expenses should not be higher than income"
+            );
         }
     });
 
