@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+header {
+    font-family: "Oswald", sans-serif;
+    color: slategray;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+}
+
+.calc-height {
+    height: 670px;
+}
+
+.calc-bg {
+    background-color: slategray;
+}
+
+.input-style {
+    width: 280px;
+}
+
+.save-input-style {
+    width: 80px;
+}
