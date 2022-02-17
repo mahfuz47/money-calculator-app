@@ -14,26 +14,59 @@
 </head>
 
 <body>
+    <!-- 
+-
+-
+-
+-
+ Header Icon Section 
+-
+-
+-
+-
+- -->
     <header>
         <h1 class="fw-bolder text-center font-bold mt-5">MONEY CALCULATOR</h1>
     </header>
     <main class="my-5 container">
         <div class="row gy-5">
+            <!-- 
+-
+-
+-
+-
+Calculator Image
+-
+-
+-
+-
+- -->
             <div class="col-md-7 col-sm-12 calc-height">
                 <img class="rounded h-100" src="calculating money.jpeg" alt="" width="100%" />
             </div>
+            <!-- 
+-
+-
+-
+-
+Calculator Function
+-
+-
+-
+-
+- -->
             <div class="col-md-5 col-sm-12">
                 <div class="calc-bg rounded calc-height">
                     <h3 class="text-center fw-bolder p-4">Income</h3>
                     <div class="d-flex justify-content-center">
                         <div class="d-flex justify-content-evenly aligh-items-center">
                             <h5 class="pe-2 fw-bold">Income:</h5>
-                            <input class="input-style" id="income-input" type="text" />
+                            <input class="input-style" id="income-input" type="text" placeholder="৳ Put here monthly income" />
                         </div>
                     </div>
                     <h3 class="text-center fw-bolder p-4">Expenses</h3>
                     <div class="expenses-section d-flex justify-content-center">
-                        <div class="">
+                        <div>
                             <div class="me-2">
                                 <h5 class="fw-bold text-end py-2">Food:</h5>
                             </div>
@@ -46,29 +79,41 @@
                         </div>
                         <div>
                             <div>
-                                <input class="input-style my-2" id="income-input" type="text" />
+                                <input class="input-style my-2" id="food-input" type="text" placeholder="৳ Put here food expenses" />
                             </div>
                             <div>
-                                <input class="input-style my-2" id="income-input" type="text" />
+                                <input class="input-style my-2" id="rent-input" type="text" placeholder="৳ Put here rent expenses" />
                             </div>
                             <div>
-                                <input class="input-style my-2" id="income-input" type="text" />
+                                <input class="input-style my-2" id="cloths-input" type="text" placeholder="৳ Put here clothes expenses" />
                             </div>
                         </div>
                     </div>
                     <div class="text-center mt-4">
-                        <button class="btn btn-primary rounded py-2 px-4">
+                        <button id="calculator-button" class="btn btn-primary rounded py-2 px-4">
                 CALCULATE
               </button>
                     </div>
                     <div>
                         <h5 class="fw-bold text-center my-3 mt-4">
-                            Total Expenses: <span id="total-expenses">0</span>
+                            Total Expenses: <span id="expensesValue">0</span>
                         </h5>
                         <h5 class="fw-bold text-center">
-                            Balance: <span id="total-balance">0</span>
+                            Balance: <span id="balanceValue">0</span>
                         </h5>
                     </div>
+
+                    <!-- 
+-
+-
+-
+-
+Saving Section
+-
+-
+-
+-
+- -->
                     <div class="d-flex justify-content-center aligh-items-center">
 
                         <div class="mx-2">
@@ -76,7 +121,7 @@
                         </div>
 
 
-                        <div class="mx-2"><input class="my-2 save-input-style" id="income-input" type="text" /></div>
+                        <div class="mx-2"><input class="my-2 save-input-style" id="saveInput" type="text" placeholder="% saving" /></div>
 
 
                         <div class="mx-2">
@@ -84,14 +129,14 @@
                         </div>
 
 
-                        <div class="pt-1 mx-2"><button class="btn btn-primary rounded px-5">Save</button></div>
+                        <div class="pt-1 mx-2"><button id="save" class="btn btn-primary rounded px-5">Save</button></div>
                     </div>
                     <div>
                         <h5 class="fw-bold text-center my-3 mt-3">
-                            Saving Amount: <span id="total-expenses">0</span>
+                            Saving Amount: <span id="savingAmount">0</span>
                         </h5>
                         <h5 class="fw-bold text-center">
-                            Remaining Balance: <span id="total-balance">0</span>
+                            Remaining Balance: <span id="remainingBalance">0</span>
                         </h5>
                     </div>
                 </div>
